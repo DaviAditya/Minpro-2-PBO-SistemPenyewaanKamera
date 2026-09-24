@@ -54,7 +54,7 @@ public class Main {
                     break;
 
                 case 2:
-                    System.out.println("\n--- INPUT TRANSAKSI BARU ---");
+                    System.out.println("\n=== INPUT TRANSAKSI BARU ===");
                     System.out.print("Kode Sewa(S001): ");
                     String kodeSewaBooking = scanner.nextLine();
                     System.out.print("ID Customer (C02): ");
