@@ -18,5 +18,34 @@ Program ini merupakan sistem penyewaan kamera berbasis bahasa java yang dibuat u
     Berisi logika bisnis dan pemrosesan data sistem Service.java Mengelola seluruh operasi manipulasi data (CRUD) di dalam ArrayList, seperti menyimpan daftar katalog        kamera, menampilkan transaksi, menambah transaksi baru, membatalkan transaksi, serta memperbarui (update) data penyewaan.
 3. Package main
     Berisi kelas utama sebagai titik masuk (entry point) program. Main.java Bertindak sebagai View/User Interface berbasis teks. Berisi menu interaktif, menerima inputan      pengguna menggunakan Scanner, serta memanggil fungsi-fungsi dari Service dalam perulangan while.
-## Alur Program
+    
+## Alur Program  
+A. Dokumentasi dibawah merupakan output yang akan tertampil ketika file dijalankan (Run File).  Tampilan dibawah merupakan tampilan awal dari Sistem Penyewaan Kamera. Menu yang ada pada sistem ini antara lain: 
+  1. Customer
+  2. Booking Kamera
+  3. Data Penyewaan & Stok
+  4. Batal Penyewaan
+  5. Update Penyewaan
+  6. Keluar  
+<img height="300" alt="image" src="https://github.com/user-attachments/assets/252846eb-e3eb-4192-9547-7bde2d2a8edd" />
+
+1. Menu Customer  
+   Pada menu ini akan dilakukan input untuk data customer seperti id dan nama. Menu ini berfungsi sebagai sarana registrasi
+   atau pendataan awal bagi pelanggan yang ingin menyewa kamera.  
+    <img height="250" alt="image" src="https://github.com/user-attachments/assets/e5a45b57-d211-479c-80f8-8ce8524635dc" />
+  
+2. Booking Camera
+   Menu ini berfungsi untuk memproses transaksi penyewaan kamera baru secara langsung. Pengguna akan menginputkan data transaksi (Kode Sewa), identitas penyewa (ID,       Nama, No. Telepon), memilih kamera berdasarkan katalog yang ditampilkan, serta menentukan durasi sewa. Data yang diinputkan akan disimpan secara otomatis ke dalam      ArrayList transaksi melalui Service.  
+   <img height="400" alt="image" src="https://github.com/user-attachments/assets/1c5566fa-91a1-4f53-8f98-c0c7e7ea17c8" />
+
+4. Data Penyewaan & Stock
+   Menu ini berfungsi untuk menampilkan seluruh riwayat transaksi penyewaan yang tersimpan di dalam sistem (ArrayList). Informasi yang ditampilkan meliputi Kode Sewa,     data diri penyewa, detail jenis kamera yang dipinjam, kalkulasi durasi jam sewa, hingga total biaya sewa yang harus dibayar.
+5. Batal Penyewaan
+   Menu ini berfungsi untuk membatalkan transaksi penyewaan yang sudah tercatat. Pengguna cukup memasukkan Kode Sewa yang ingin dibatalkan, kemudian sistem akan
+   mencari data tersebut di dalam ArrayList dan menghapusnya.
+6. Update Penyewaan
+   Menu ini berfungsi untuk memperbarui atau mengedit detail data transaksi penyewaan yang sudah ada. Pengguna dapat memilih bagian spesifik yang ingin diubah melalui
+   submenu (ID Customer, Nama Customer, No. Telepon, Jenis Kamera, atau Durasi Sewa). Informasi baru akan diperbarui secara fleksibel tanpa harus menghapus transaksi.
+7. Keluar
+   Menu ini berfungsi untuk menghentikan perulangan program (looping). Saat dipilih, sistem akan mengubah status variabel pengontrol menjadi false dan menutup program
 ## Nilai Tambah
