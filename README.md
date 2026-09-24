@@ -38,14 +38,21 @@ A. Dokumentasi dibawah merupakan output yang akan tertampil ketika file dijalank
    Menu ini berfungsi untuk memproses transaksi penyewaan kamera baru secara langsung. Pengguna akan menginputkan data transaksi (Kode Sewa), identitas penyewa (ID,       Nama, No. Telepon), memilih kamera berdasarkan katalog yang ditampilkan, serta menentukan durasi sewa. Data yang diinputkan akan disimpan secara otomatis ke dalam      ArrayList transaksi melalui Service.  
    <img height="400" alt="image" src="https://github.com/user-attachments/assets/1c5566fa-91a1-4f53-8f98-c0c7e7ea17c8" />
 
-4. Data Penyewaan & Stock
-   Menu ini berfungsi untuk menampilkan seluruh riwayat transaksi penyewaan yang tersimpan di dalam sistem (ArrayList). Informasi yang ditampilkan meliputi Kode Sewa,     data diri penyewa, detail jenis kamera yang dipinjam, kalkulasi durasi jam sewa, hingga total biaya sewa yang harus dibayar.
-5. Batal Penyewaan
+3. Data Penyewaan & Stock
+   Menu ini berfungsi untuk menampilkan seluruh riwayat transaksi penyewaan yang tersimpan di dalam sistem (ArrayList). Informasi yang ditampilkan meliputi Kode Sewa,     data diri penyewa, detail jenis kamera yang dipinjam, kalkulasi durasi jam sewa, hingga total biaya sewa yang harus dibayar.  
+   <img width="432" height="486" alt="image" src="https://github.com/user-attachments/assets/326b8397-dc9d-4fa3-8c9f-8cf3a703c96e" />
+
+4. Batal Penyewaan
    Menu ini berfungsi untuk membatalkan transaksi penyewaan yang sudah tercatat. Pengguna cukup memasukkan Kode Sewa yang ingin dibatalkan, kemudian sistem akan
    mencari data tersebut di dalam ArrayList dan menghapusnya.
+   <img width="490" height="246" alt="image" src="https://github.com/user-attachments/assets/2142c342-b8d9-4d54-b670-f2733fa289e0" />
+   <img width="410" height="377" alt="image" src="https://github.com/user-attachments/assets/542a2e24-40cc-45a0-8264-3ad22e428b76" />
+
+
+   
 6. Update Penyewaan
    Menu ini berfungsi untuk memperbarui atau mengedit detail data transaksi penyewaan yang sudah ada. Pengguna dapat memilih bagian spesifik yang ingin diubah melalui
    submenu (ID Customer, Nama Customer, No. Telepon, Jenis Kamera, atau Durasi Sewa). Informasi baru akan diperbarui secara fleksibel tanpa harus menghapus transaksi.
 7. Keluar
-   Menu ini berfungsi untuk menghentikan perulangan program (looping). Saat dipilih, sistem akan mengubah status variabel pengontrol menjadi false dan menutup program
+   Menu ini berfungsi untuk menghentikan perulangan program (looping). Saat dipilih, sistem akan mengubah status variabel pengontrol menjadi false dan menutup program.
 ## Nilai Tambah
