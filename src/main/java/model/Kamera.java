@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  */
 
-package com.mycompany.kamera;
+package model;
 
 /**
  *
@@ -19,29 +19,40 @@ public class Kamera {
         this.namaKamera = namaKamera;
         this.hargaSewa = hargaSewa;
     }
-
+    // Getter dan Setter
     public int getIdKamera() {
         return idKamera; 
     }
     
-    public void setIKamera(int idKamera) {
+    public void setIdKamera(int idKamera) {
         this.idKamera = idKamera;
     }
 
-public String getNamaKamera() {
-    return namaKamera;
-}
+    public String getNamaKamera() {
+        return namaKamera;
+    }
 
-public double getHargaSewa() {
-    return hargaSewa;
-}
+    public void setNamaKamera(String namaKamera) {
+        this.namaKamera = namaKamera;
+    }
 
-public void setHargaSewa(double hargaSewa) {
-    if (hargaSewa < 0) {
-        throw new IllegalArgumentException ("Harga sewa tidak boleh negatif!");
+    public double getHargaSewa() {
+        return hargaSewa;
+    }
+    public void setHargaSewa(double hargaSewa) {
+        if (hargaSewa < 0) {
+            throw new IllegalArgumentException ("Harga sewa tidak boleh negatif!");
     }
    this.hargaSewa = hargaSewa;
 }
+    public double hitungBiayaSewa(int durasi3Jam) {
+        return this.hargaSewa * durasi3Jam;
+    }
+
+    public String getInfo() {
+    return "ID: " + idKamera + " | Nama: " + namaKamera;
+}
+    
     @Override
     public String toString() {
         return "Kamera{" +
