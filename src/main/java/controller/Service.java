@@ -35,9 +35,9 @@ public class Service {
         daftarKamera.add(digicam2);
 
         // Dummy data
-        Penyewaan sewa1 = new Penyewaan("S001", "C01", "Budi Santoso", "081234567890", dslr1, 2);
-        Penyewaan sewa2 = new Penyewaan("S002", "C02", "Siti Aminah", "089876543210", mirrorless1, 1);
-        Penyewaan sewa3 = new Penyewaan("S003", "C03", "Jamaludin", "089822113412", digicam1, 1);
+        Penyewaan sewa1 = new Penyewaan("S001", "C01", "Davi Aditya", "081234567890", dslr1, 2);
+        Penyewaan sewa2 = new Penyewaan("S002", "C02", "Riaz Ramadhan", "089876543210", mirrorless1, 1);
+        Penyewaan sewa3 = new Penyewaan("S003", "C03", "Indah Marlina", "089822113412", digicam1, 1);
         
         daftarSewa.add(sewa1);
         daftarSewa.add(sewa2);
